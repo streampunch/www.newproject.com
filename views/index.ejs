@@ -1,0 +1,17 @@
+<% layout('./layout') -%>
+<% stylesheet('/css/pages/index.css') -%>
+<% script('/js/pages/index.js') -%>
+<h1>products</h1>
+<div class="products">
+<%
+	var products = data.products,
+		product = null;
+	for(var i = 0; i < products.length; i++) {
+		product = products[i];
+		%><div class="product"><%
+		%><a href="<%=product.productURL%>"><img src="<%=product.images[0]%>"/></a><%
+		%><div class="product-name"><%=product.productName%></div><%
+		%></div><%
+	}
+%>
+</div>

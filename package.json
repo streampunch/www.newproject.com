@@ -1,0 +1,11 @@
+{
+  "name": "www.newproject.com",
+  "subdomain": "eugeneo",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "version": "0.0.0",
+  "engines": {
+    "node": "0.8.x"
+  }
+}
